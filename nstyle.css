@@ -1,0 +1,370 @@
+
+html {
+    scroll-behavior: smooth;
+}
+
+.btn-link {
+    color: white;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.btn-link:hover {
+    color: khaki;
+}
+
+@media(min-width: 768px) {
+    .search-input {
+        width: 50% !important;
+    }
+}
+
+hr{
+    width: 30px;
+    height: 3px !important;
+    background-color: rgba(0, 0, 255, 0.507) !important;
+}
+
+.heading {
+    color:blanchedalmond;
+    font-family: "Permanent Marker", sans-serif;
+}
+
+.link {
+    color: black !important;
+}
+
+/* .bgim {
+    background-image: url("Images for Website/cover page photo.jpg");
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+    background-position: top bottom 60px center;
+} */
+/* 
+.navbar {
+    top: 0;
+    left: 0;
+} */
+/******mobile navigation******/
+.navbar-dark.navbar-toggler {
+    border: none !important;
+    outline: none !important;
+
+}
+
+
+ #new .one img {
+    width: 100% !important;
+    height: 100% !important;
+    background-position: center !important;
+    background-repeat: no-repeat !important;
+    background-size: cover !important;
+    position: relative !important;
+}
+/*
+ #new .one .words {
+    position: absolute !important;
+    width: 50px !important;
+    height: 50px !important;
+    top: 0 !important;
+    left: 0 !important;
+    transition: 0.3s ease !important;
+    color: ivory;
+
+} */
+
+.buy-btn {
+    background-color: black;
+    color: ivory;
+    border-radius: 20px;
+}
+
+/**Product Section**/
+
+.product {
+    cursor: pointer;
+    margin-bottom: 2rem;
+}
+
+.product img {
+    transition: 0.3s all;
+}
+
+.product:hover img {
+    opacity: 0.7;
+}
+
+.product .buy-btn {
+    transform: translateY(20px);
+    opacity: 0;
+    transition: 0.3s all;
+}
+
+.product:hover .buy-btn {
+    transform: translateY(0);
+    opacity: 1;
+}
+
+.prdct-imgg{
+    width: 96% !important;
+    height: 70% !important;
+    padding-left: 4px !important;
+    margin-left: 4px !important;
+}
+
+#banner {
+    background-image: url("Images for website/hoodie2.jpg");
+    width: 100%;
+    height: 60vh;
+    background-size: cover;
+    background-position: top 70px center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+footer {
+    background-color: black;
+
+}
+
+footer h5 {
+    color: white;
+    font-weight: 700;
+    font-size: 1.2rem;
+    
+}
+
+footer li {
+     padding-bottom: 4px;
+}
+
+footer li a {
+    font-size: 0.8rem;
+    color: grey;
+    text-decoration-line: none;
+}
+
+
+footer li a:hover {
+    color: white;
+}
+
+footer p {
+    color: grey;
+    font-size: 00.8rem;
+}
+
+
+/* css for the image slider */
+
+
+.link {
+    text-decoration-line: none;
+}
+
+.slider {
+    position: relative;
+    width: 100%;
+    background: rgba(28, 28, 48, 0.507);
+}
+
+.myslider {
+    height: 655px;
+    display: none;
+    overflow: hidden;
+}
+
+.prev, .next{
+    position: absolute;
+    top: 50%;
+    transform: translate(0, -50%);
+    font-size: 50px;
+    padding: 15px;
+    cursor: pointer;
+    color: rgb(25, 26, 44) !important;
+    transition: 0.1s !important;
+    user-select: none !important;
+}
+
+.prev:hover, .next:hover {
+    color: rgb(49, 63, 102) !important;
+}
+
+.next{
+    right: 0;
+}
+
+.dotsbox{
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%);
+    bottom: 20px;
+    cursor: pointer;
+}
+
+.dot{
+    display: inline-block;
+    width: 15px;
+    height: 15px;
+    border: 3px solid rgb(25, 26, 44);
+    border-radius: 50%;
+    margin: 0 10px;
+    cursor: pointer;
+}
+
+.active, .dot:hover {
+    border-color: rgb(49, 63, 102);
+}
+
+.hhh{      
+    -webkit-animation-name: fade !important;
+    -webkit-animation-duration: 1.5s !important;
+    animation-name: fade !important;
+    animation-duration: 1.5s !important;
+    /* This is for fading the pictures */
+}
+
+@-webkit-keyframes fade {
+    from {opacity: 0.8}
+    to {opacity: 1}
+}
+
+@keyframes fade {
+    from {opacity: 0.8}
+    to {opacity: 1}
+}
+
+.txt{
+    position: absolute;
+    color: rgb(158, 245, 239);
+    letter-spacing: 2px;
+    line-height: 35px;
+    top: 40%;
+    left: 15%;
+    -webkit-animation-name: posi;
+    -webkit-animation-duration: 2s;
+    animation-name: posi;
+    animation-duration: 2s;
+    z-index: 1;
+}
+
+@-webkit-keyframes posi {
+    from{left: 25%;}
+    to{left: 15%;}
+}
+
+
+@keyframes posi {
+    from{left: 25%;}
+    to{left: 15%;}
+}
+
+.txt h1 {
+    color: rgb(29, 36, 43);
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.txt p{
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.myslider img {
+    transform: scale(1.5, 1.5);
+    -webkit-animation-name: zoomin;
+    -webkit-animation-duration: 40s;
+    animation-name: zoomin;
+    animation-duration: 40s;
+}
+
+@-webkit-keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.5, 1.5);}
+}
+
+@keyframes zoomin {
+    from {transform: scale(1, 1);}
+    to {transform: scale(1.5, 1.5);}
+}
+
+@media screen and (max-width: 800px){
+    .myslider {
+        height: 500px;
+    }
+    .txt{
+        line-height: 25px;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        -webkit-animation-name: posi2;
+        -webkit-animation-duration: 2s;
+        animation-name: posi2;
+        animation-duration: 2s;
+    }
+    @keyframes posi2 {
+        from{top: 35%;}
+        to{top: 50%;}
+    }
+    .txt h1{
+        font-size: 40px;
+    }
+    .txt p{
+        font-size: 13px;
+    }
+} 
+ 
+@media screen and (max-width: 520px){
+    .txt h1{
+        font-size: 30px;
+    }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
